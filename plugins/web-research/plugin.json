@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "web-research",
+  "version": "0.1.0",
+  "description": "Research a question on the live web and report findings with sources.",
+  "author": {
+    "name": "Myndr AI",
+    "url": "https://myndr.ai"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["research", "search", "browser"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Web research",
+        "shortDescription": "Search, read, and cite the live web.",
+        "longDescription": "Two skills: a research loop that searches, reads, and reports with sources, and a source check that rates how much a claim can be trusted.",
+        "category": "research"
+      }
+    }
+  }
+}

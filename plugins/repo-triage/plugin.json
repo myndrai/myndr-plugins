@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "repo-triage",
+  "version": "0.1.0",
+  "description": "Triage GitHub issues and pull requests on a connected repository.",
+  "author": {
+    "name": "Myndr AI",
+    "url": "https://myndr.ai"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["github", "issues", "triage"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Repo triage",
+        "shortDescription": "Sort issues and PRs, then say what to do next.",
+        "longDescription": "Reads open issues and pull requests on a repository the GitHub connection can see, groups them by what they actually need, and proposes the next action for each. Needs the GitHub tool connected.",
+        "category": "development"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "myndr",
+  "interface": {
+    "displayName": "Myndr"
+  },
+  "plugins": [
+    {
+      "name": "web-research",
+      "description": "Research a question on the live web and report findings with sources.",
+      "category": "research",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 1,
+      "interface": {
+        "displayName": "Web research",
+        "shortDescription": "Search, read, and cite the live web."
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/web-research"
+      }
+    },
+    {
+      "name": "repo-triage",
+      "description": "Triage GitHub issues and pull requests on a connected repository.",
+      "category": "development",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 2,
+      "interface": {
+        "displayName": "Repo triage",
+        "shortDescription": "Sort issues and PRs, then say what to do next."
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/repo-triage"
+      }
+    }
+  ]
+}
