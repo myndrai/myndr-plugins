@@ -29,7 +29,7 @@ any third-party marketplace):
 | Field | Effect |
 | --- | --- |
 | `featured` | eligible for the Popular row on the Plugins page |
-| `rank` | order within Popular, ascending |
+| `rank` | order within Popular, descending — a higher rank is shown first |
 | `blocked` + `blocked_reason` | kill switch: the app refuses to install or load the plugin and shows the reason |
 
 ## Adding a plugin

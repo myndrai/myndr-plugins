@@ -10,7 +10,7 @@
       "category": "research",
       "version": "0.1.0",
       "featured": true,
-      "rank": 1,
+      "rank": 2,
       "interface": {
         "displayName": "Web research",
         "shortDescription": "Search, read, and cite the live web."
@@ -26,7 +26,7 @@
       "category": "development",
       "version": "0.1.0",
       "featured": true,
-      "rank": 2,
+      "rank": 1,
       "interface": {
         "displayName": "Repo triage",
         "shortDescription": "Sort issues and PRs, then say what to do next."
