@@ -18,9 +18,7 @@
       "source": {
         "source": "local",
         "path": "./plugins/web-research"
-      },
-      "blocked": true,
-      "blocked_reason": "test"
+      }
     },
     {
       "name": "repo-triage",
