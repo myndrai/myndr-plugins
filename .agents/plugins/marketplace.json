@@ -115,6 +115,22 @@
         "source": "local",
         "path": "./plugins/google-docs"
       }
+    },
+    {
+      "name": "notion",
+      "description": "Search, write and organize Notion through Notion's hosted MCP server, with Notion's own skills.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 26,
+      "interface": {
+        "displayName": "Notion",
+        "shortDescription": "Search, write and organize Notion"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/notion"
+      }
     }
   ]
 }

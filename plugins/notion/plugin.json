@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notion",
+  "version": "0.1.0",
+  "description": "Search, write and organize Notion through Notion's hosted MCP server, with Notion's own skills.",
+  "author": {
+    "name": "Myndr",
+    "url": "https://myndr.ai"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/notion",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["notion", "docs", "wiki", "notes"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Notion",
+        "shortDescription": "Search, write and organize Notion",
+        "longDescription": "Find pages, write docs and meeting notes, and keep databases current. Uses Notion's hosted server and signs in with your Notion account. Includes Notion's own skills for capturing knowledge, preparing meetings, researching and planning from specs.",
+        "category": "productivity",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}
