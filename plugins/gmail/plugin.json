@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gmail",
+  "version": "0.1.0",
+  "description": "Search, read, label and draft email in Gmail through Google's Gmail MCP server.",
+  "author": {
+    "name": "Myndr",
+    "url": "https://myndr.ai"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/gmail",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["gmail", "email", "google"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Gmail",
+        "shortDescription": "Read, label and draft email",
+        "longDescription": "Search and read your threads, organize them with labels, and prepare drafts for you to review and send. Uses Google's own Gmail server; Myndr never sees your password.",
+        "category": "communication",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}

@@ -35,6 +35,22 @@
         "source": "local",
         "path": "./plugins/repo-triage"
       }
+    },
+    {
+      "name": "gmail",
+      "description": "Search, read, label and draft email in Gmail through Google's Gmail MCP server.",
+      "category": "communication",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 30,
+      "interface": {
+        "displayName": "Gmail",
+        "shortDescription": "Read, label and draft email"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/gmail"
+      }
     }
   ]
 }
