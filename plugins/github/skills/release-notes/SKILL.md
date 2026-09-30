@@ -25,9 +25,11 @@ repository; if it is unclear which, ask.
 ## Steps
 
 1. **Fix the range.** The user's "from" and "to", or else the previous release:
-   `github__get_latest_release` (or `github__list_releases`, which skips drafts
-   unless asked) to the default branch head. Get the "from" date from the release
-   or `github__get_release_by_tag`; for a bare tag, `github__get_commit` on it.
+   `github__get_latest_release` (or `github__list_releases`, ignoring entries
+   with `draft: true` unless the user asks for them: a draft is unpublished and
+   is not the previous release) to the default branch head. Get the "from"
+   date from the release or `github__get_release_by_tag`; for a bare tag,
+   `github__get_commit` on it.
 2. **Collect merged PRs.** `github__search_pull_requests` with
    `query: "repo:<owner>/<repo> is:pr is:merged base:<default branch> merged:>=<from date>"`,
    plus `merged:<=<to date>` when the range ends earlier. Page through all results.

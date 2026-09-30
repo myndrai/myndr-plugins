@@ -31,10 +31,13 @@ repository the user named; if it is unclear which, ask.
    which.
 2. **Pull the backlog.** `github__list_issues` with `state: "OPEN"` and
    `perPage` 100, following `after` cursors. `github__list_pull_requests` with
-   `state: "open"`. Closed items only when the user asks. Use `fields` to drop
-   bodies from the list calls; read bodies in step 3.
+   `state: "open"`, `perPage` 100, and `page` 1, 2, 3, … until a page returns
+   fewer than 100 results. Closed items only when the user asks. Count only
+   after every page is read, so the totals in the output are complete. Use
+   `fields` to drop bodies from the list calls; read bodies in step 3.
 3. **Read before classifying.** `github__issue_read` with `method: "get"` for
-   the body, then `method: "get_comments"` for the last comment. A title
+   the body, then `method: "get_comments"` with `perPage` 100, paging with `page`
+   to the final page for the last comment (comments come oldest first). A title
    describes the reporter's theory; the last comment often says it was already
    fixed. `get` also reports `closed_by_pull_requests`.
 4. **Classify each item** into exactly one bucket:
@@ -57,7 +60,8 @@ repository the user named; if it is unclear which, ask.
 ## Rules
 
 - Do not write to the repository. Comments, labels and closures are proposals
-  the user approves item by item, and Myndr asks again before each write:
+  the user approves item by item. Myndr may also ask before each write,
+  depending on the tool's permission:
   - `github__add_issue_comment` for a comment
   - `github__issue_write` with `method: "update"` for labels or closing
   - `github__issue_write` with `method: "create"` for a new issue
