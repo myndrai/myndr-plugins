@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "GitHub",
         "shortDescription": "Issues, pull requests and code search",
-        "longDescription": "Triage issues, review and open pull requests, and search code across your repositories. Uses GitHub's own server with the GitHub account you connect.",
+        "longDescription": "Triage issues, review and open pull requests, and search code across your repositories.",
         "category": "development",
         "icon": "./assets/icon.svg",
         "icon_dark": "./assets/icon-dark.svg"

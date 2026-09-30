@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Google Docs",
         "shortDescription": "Read and write documents",
-        "longDescription": "Read and summarize documents, and write drafts into a doc you choose — directly or as suggestions. Uses Google's own Docs server with the Google account you connect.",
+        "longDescription": "Read and summarize documents, and write drafts into a doc you choose — directly or as suggestions.",
         "category": "productivity",
         "icon": "./assets/icon.svg",
         "icon_dark": "./assets/icon-dark.svg"

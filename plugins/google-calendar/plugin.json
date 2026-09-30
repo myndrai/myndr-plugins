@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Google Calendar",
         "shortDescription": "See your day and schedule meetings",
-        "longDescription": "Read your calendars, find times that work for everyone, and create or answer invitations when you say so. Uses Google's own Calendar server with the Google account you connect.",
+        "longDescription": "Read your calendars, find times that work for everyone, and create or answer invitations when you say so.",
         "category": "productivity",
         "icon": "./assets/icon.svg",
         "icon_dark": "./assets/icon-dark.svg"

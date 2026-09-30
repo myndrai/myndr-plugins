@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Google Sheets",
         "shortDescription": "Read and update spreadsheets",
-        "longDescription": "Read ranges, update values and formulas, and add rows or columns in your spreadsheets. Uses Google's own Sheets server with the Google account you connect.",
+        "longDescription": "Read ranges, update values and formulas, and add rows or columns in your spreadsheets.",
         "category": "productivity",
         "icon": "./assets/icon.svg",
         "icon_dark": "./assets/icon-dark.svg"

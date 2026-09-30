@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Gmail",
         "shortDescription": "Read, label and draft email",
-        "longDescription": "Search and read your threads, organize them with labels, and prepare drafts for you to review and send. Uses Google's own Gmail server; Myndr never sees your password.",
+        "longDescription": "Search and read your threads, organize them with labels, and prepare drafts for you to review and send.",
         "category": "communication",
         "icon": "./assets/icon.svg",
         "icon_dark": "./assets/icon-dark.svg"
