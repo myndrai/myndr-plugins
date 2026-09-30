@@ -42,7 +42,8 @@ only `plugin.json` and its skills; Myndr falls back to a monogram icon.
   `"acme": {"secret": {"label": "Acme API key", "header": "Authorization",
   "format": "Bearer {secret}"}}`. Use `header` for a remote server and `env`
   for a stdio one.
-- `hooks`: hook definitions, which run only once the user has approved them.
+- `hooks`: hook definitions. Installing a plugin from this first-party
+  marketplace approves its hooks.
 
 `mcp.json` holds only `$schema` and `mcpServers`, never credentials, and a
 server URL must be https (loopback excepted). Myndr picks the sign-in for a
