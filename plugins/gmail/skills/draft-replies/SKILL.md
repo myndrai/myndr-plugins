@@ -25,12 +25,17 @@ which is the one the user named or the one the thread was found in.
 2. **Read all of it.** `gmail__get_thread` with `messageFormat: "PLAIN_TEXT"`.
    Answer the latest message and everything it still asks, not only its last
    line.
-3. **Check for an existing draft.** `gmail__list_drafts` and match on the
-   thread: a draft belongs to this thread only when its `threadId` equals the
-   thread's `threadId`. Use the subject only to show the user which draft it is,
-   never to decide a match, since common subjects repeat across threads. If a
-   draft already exists for this thread, say so and ask whether to replace it
-   rather than adding a second one.
+3. **Check for an existing draft.** Call `gmail__list_drafts` with a `query`
+   that narrows it to this conversation, for example `to:<recipient>` (the
+   sender of the thread's last message), and `pageSize` 50. Keep calling with
+   the returned `pageToken` until the thread's draft turns up or the response
+   has no `nextPageToken`; an empty `{}` means no drafts match. A draft belongs
+   to this thread only when its `threadId` equals the thread's `threadId`; the
+   default view carries `threadId`, so this needs nothing more. Decide the match
+   by `threadId` alone, never by subject, since common subjects repeat across
+   threads. To show the user which draft it is, pass `view: "DRAFT_VIEW_FULL"`:
+   the default view omits `subject`. If a draft already exists for this thread,
+   say so and ask whether to replace it rather than adding a second one.
 4. **Learn the voice.** `gmail__search_threads` with `in:sent to:<recipient>`,
    `pageSize` 5; read two or three with `gmail__get_thread`. Match greeting,
    sign-off, length and formality. With no history, use `in:sent` in general.
