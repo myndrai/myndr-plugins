@@ -99,6 +99,22 @@
         "source": "local",
         "path": "./plugins/google-sheets"
       }
+    },
+    {
+      "name": "google-docs",
+      "description": "Read, summarize and write into Google Docs through Google's Docs MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 24,
+      "interface": {
+        "displayName": "Google Docs",
+        "shortDescription": "Read and write documents"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-docs"
+      }
     }
   ]
 }

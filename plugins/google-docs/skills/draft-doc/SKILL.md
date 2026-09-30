@@ -1,0 +1,56 @@
+---
+name: draft-doc
+description: Write a draft into an existing Google Doc the user chooses — appended, inserted under a heading, or as suggestions — then verify it landed. Use when asked to write, draft, or add a section to a Google Doc.
+---
+
+# Draft into a doc
+
+This server edits existing documents; it cannot create one. If the user wants a
+new document, ask them to create a blank one (docs.new) and share the link.
+
+Tools from this plugin's `gdocs` server:
+
+- Read: `gdocs__read_doc`
+- Changes the document: `gdocs__update_doc`
+
+If the tools take a `myndr_account` argument, use the account that can edit the doc.
+
+## Steps
+
+1. **Get the doc.** The id after `/document/d/` in the link.
+2. **Read it first.** `gdocs__read_doc`. Note `revisionId`, the headings, and
+   the end of the body (the last element's `endIndex`). Decide where the draft
+   goes: the end, or after a named heading.
+3. **Write the draft in the conversation** and get the user's yes on the text and
+   the location. Say whether it will be a direct edit or suggestions. Use
+   suggestions (`writeMode: "SUGGEST"`) whenever the doc is someone else's or the
+   user asks to review in Docs.
+4. **Apply.** `gdocs__update_doc` with `documentId`, `requests`, and
+   `writeControl: {requiredRevisionId: <from step 2>, writeMode: "EDIT" | "SUGGEST"}`:
+   - append: `{"insertText": {"text": "...", "endOfSegmentLocation": {}}}`
+   - insert at a point: `{"insertText": {"text": "...", "location": {"index": N}}}`
+   - headings: after inserting, `updateParagraphStyle` on that range with
+     `namedStyleType: "HEADING_2"` (fields `namedStyleType`)
+
+   Use real newline characters in `text`, never the two characters `\n`. With
+   several insertions in one call, order them from the highest index to the
+   lowest so earlier inserts do not shift later ones.
+5. **If the revision check fails**, the doc changed since you read it: read again,
+   recompute indexes, and ask before retrying.
+6. **Verify.** `gdocs__read_doc` again and confirm the text and headings are
+   where you meant.
+
+## Rules
+
+- Never delete or replace existing text unless the user asked for that exact
+  change (`deleteContentRange` and `replaceAllText` change other people's
+  words).
+- Never accept or reject other people's suggestions.
+- Keep the document's existing heading levels and tone.
+
+## Output
+
+```
+Added "<section title>" (<n> paragraphs) to <doc title> at <end | after "<heading>">, as <edit | suggestions>.
+<link>
+```
