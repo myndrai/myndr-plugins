@@ -36,7 +36,7 @@ If the tools take a `myndr_account` argument, use the account that can edit the 
      `endOfSegmentLocation` and also to the `range` of every style request, so
      the text and its heading style land in the tab you chose, not the first
      one
-   - if `read_doc` shows no tab ids, treat the document as a single tab and omit
+   - if `gdocs__read_doc` shows no tab ids, treat the document as a single tab and omit
      `tabId`; if it looks like it has several tabs but shows no ids, tell the
      user the text will go in the first tab and ask before applying
 
