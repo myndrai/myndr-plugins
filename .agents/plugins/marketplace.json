@@ -21,22 +21,6 @@
       }
     },
     {
-      "name": "repo-triage",
-      "description": "Triage GitHub issues and pull requests on a connected repository.",
-      "category": "development",
-      "version": "0.1.0",
-      "featured": true,
-      "rank": 1,
-      "interface": {
-        "displayName": "Repo triage",
-        "shortDescription": "Sort issues and PRs, then say what to do next."
-      },
-      "source": {
-        "source": "local",
-        "path": "./plugins/repo-triage"
-      }
-    },
-    {
       "name": "gmail",
       "description": "Search, read, label and draft email in Gmail through Google's Gmail MCP server.",
       "category": "communication",
@@ -130,6 +114,22 @@
       "source": {
         "source": "local",
         "path": "./plugins/notion"
+      }
+    },
+    {
+      "name": "github",
+      "description": "Issues, pull requests and code on GitHub through GitHub's remote MCP server.",
+      "category": "development",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 27,
+      "interface": {
+        "displayName": "GitHub",
+        "shortDescription": "Issues, pull requests and code search"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/github"
       }
     }
   ]
