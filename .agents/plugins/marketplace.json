@@ -67,6 +67,22 @@
         "source": "local",
         "path": "./plugins/google-calendar"
       }
+    },
+    {
+      "name": "google-drive",
+      "description": "Find, read and summarize files in Google Drive through Google's Drive MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 28,
+      "interface": {
+        "displayName": "Google Drive",
+        "shortDescription": "Find and read your files"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-drive"
+      }
     }
   ]
 }
