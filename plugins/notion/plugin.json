@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Search, write and organize Notion through Notion's hosted MCP server, with Notion's own skills.",
   "author": {
-    "name": "Myndr",
-    "url": "https://myndr.ai"
+    "name": "Notion",
+    "url": "https://www.notion.com"
   },
   "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/notion",
   "repository": "https://github.com/myndrai/myndr-plugins",

@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Read, summarize and write into Google Docs through Google's Docs MCP server.",
   "author": {
-    "name": "Myndr",
-    "url": "https://myndr.ai"
+    "name": "Google",
+    "url": "https://www.google.com"
   },
   "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-docs",
   "repository": "https://github.com/myndrai/myndr-plugins",

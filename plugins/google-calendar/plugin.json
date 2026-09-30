@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "See, plan and schedule events in Google Calendar through Google's Calendar MCP server.",
   "author": {
-    "name": "Myndr",
-    "url": "https://myndr.ai"
+    "name": "Google",
+    "url": "https://www.google.com"
   },
   "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-calendar",
   "repository": "https://github.com/myndrai/myndr-plugins",

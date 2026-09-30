@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Find, read and summarize files in Google Drive through Google's Drive MCP server.",
   "author": {
-    "name": "Myndr",
-    "url": "https://myndr.ai"
+    "name": "Google",
+    "url": "https://www.google.com"
   },
   "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-drive",
   "repository": "https://github.com/myndrai/myndr-plugins",
