@@ -51,6 +51,22 @@
         "source": "local",
         "path": "./plugins/gmail"
       }
+    },
+    {
+      "name": "google-calendar",
+      "description": "See, plan and schedule events in Google Calendar through Google's Calendar MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 29,
+      "interface": {
+        "displayName": "Google Calendar",
+        "shortDescription": "See your day and schedule meetings"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-calendar"
+      }
     }
   ]
 }
