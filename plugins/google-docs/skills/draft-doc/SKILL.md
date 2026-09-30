@@ -30,10 +30,15 @@ If the tools take a `myndr_account` argument, use the account that can edit the 
    `writeControl: {requiredRevisionId: <from step 2>, writeMode: "EDIT" | "SUGGEST"}`:
    - append: `{"insertText": {"text": "...", "endOfSegmentLocation": {}}}`
    - insert at a point: `{"insertText": {"text": "...", "location": {"index": N}}}`
-   - in a document with tabs, add `tabId` to `location` or
-     `endOfSegmentLocation` so the text lands in the tab you chose
    - headings: after inserting, `updateParagraphStyle` on that range with
      `namedStyleType: "HEADING_2"` (fields `namedStyleType`)
+   - in a document with tabs, add `tabId` to `location` or
+     `endOfSegmentLocation` and also to the `range` of every style request, so
+     the text and its heading style land in the tab you chose, not the first
+     one
+   - if `read_doc` shows no tab ids, treat the document as a single tab and omit
+     `tabId`; if it looks like it has several tabs but shows no ids, tell the
+     user the text will go in the first tab and ask before applying
 
    Use real newline characters in `text`, never the two characters `\n`. With
    several insertions in one call, order them from the highest index to the
