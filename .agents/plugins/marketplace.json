@@ -83,6 +83,22 @@
         "source": "local",
         "path": "./plugins/google-drive"
       }
+    },
+    {
+      "name": "google-sheets",
+      "description": "Read and update Google Sheets spreadsheets through Google's Sheets MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 25,
+      "interface": {
+        "displayName": "Google Sheets",
+        "shortDescription": "Read and update spreadsheets"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-sheets"
+      }
     }
   ]
 }
