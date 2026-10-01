@@ -38,6 +38,6 @@ All other text is Notion's, unchanged.
 `notion-logo-block-main.svg`), unmodified. `icon-dark.svg` is a byte copy of `icon.svg`: the standard mark
 carries its own white tile, which reads on dark backgrounds.
 
-Trademark: Notion and the Notion logo are trademarks of Notion Labs, Inc. They are used here only to identify
-the service this plugin connects to; this plugin is not made, sponsored or endorsed by Notion Labs. The logo
-files are not covered by this repository's MIT license.
+Trademark: Notion and its logo are trademarks of Notion Labs, Inc., used here only to identify the service this
+plugin connects to. Myndr packages this plugin and adapted Notion's skills for it, as described above; Notion Labs
+does not sponsor or endorse it. The logo files are not covered by this repository's MIT license.

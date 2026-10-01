@@ -27,7 +27,7 @@ Both skills are written by Myndr for this plugin (MIT). They name only tools the
 https://fonts.gstatic.com/s/i/productlogos/sheets_2020q4/v6/192px.svg. The two files are identical: the
 full-colour mark is used on light and dark backgrounds alike.
 
-Trademark: Google Sheets and the Google Sheets logo are trademarks of Google LLC. They are used here only to
-identify the service this plugin connects to; this plugin is not made, sponsored or endorsed by Google. Use
-follows Google's brand guidelines (https://about.google/brand-resource-center/). The logo files are not covered
-by this repository's MIT license.
+Trademark: Google Sheets and its logo are trademarks of Google LLC, used here only to identify the service this
+plugin connects to. Myndr packages this plugin and wrote its skills; Google does not sponsor or endorse it. Use
+follows Google's brand guidelines (https://about.google/brand-resource-center/). The logo files are not covered by
+this repository's MIT license.

@@ -31,6 +31,6 @@ Primer Octicons `mark-github-24` (`@primer/octicons` 19.38.0, https://primer.sty
 MIT), with one fill added for use in an image: `#1F2328` and `#F0F6FC`, GitHub's Primer foreground colours. See
 GitHub's logo guidelines at https://brand.github.com/foundations/logo.
 
-Trademark: GitHub and the GitHub logo are trademarks of GitHub, Inc. They are used here only to identify the
-service this plugin connects to; this plugin is not made, sponsored or endorsed by GitHub. The logo files are not
-covered by this repository's MIT license.
+Trademark: GitHub and its logo are trademarks of GitHub, Inc., used here only to identify the service this plugin
+connects to. Myndr packages this plugin and wrote its skills; GitHub does not sponsor or endorse it. The logo
+files are not covered by this repository's MIT license.
