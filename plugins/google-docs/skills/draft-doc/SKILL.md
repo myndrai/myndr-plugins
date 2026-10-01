@@ -18,16 +18,19 @@ If the tools take a `myndr_account` argument, use the account that can edit the 
 ## Steps
 
 1. **Get the doc.** The id after `/document/d/` in the link.
-2. **Read it first.** `gdocs__read_doc`. Note the document's revision id, its
-   headings, and the end of the body (the last element's end index). If the
-   document has several tabs, note which tab the draft belongs in. Decide where
-   the draft goes: the end, or after a named heading.
+2. **Read it first.** `gdocs__read_doc`. Note the document's revision id (if the
+   read shows one), its headings, and the end of the body (the last element's end
+   index). If the document has several tabs, note which tab the draft belongs in.
+   Decide where the draft goes: the end, or after a named heading.
 3. **Write the draft in the conversation** and get the user's yes on the text and
    the location. Default to suggestions (`writeMode: "SUGGEST"`): the server
    cannot tell whose document it is, so do not guess. Use a direct edit
    (`writeMode: "EDIT"`) only when the user says so.
 4. **Apply.** `gdocs__update_doc` with `documentId`, `requests`, and
-   `writeControl: {requiredRevisionId: <from step 2>, writeMode: "EDIT" | "SUGGEST"}`:
+   `writeControl: {requiredRevisionId: <from step 2>, writeMode: "EDIT" | "SUGGEST"}`.
+   If step 2 showed no revision id, send `writeControl: {writeMode: ...}` without
+   `requiredRevisionId`, and read the doc again right before writing so the
+   indexes are current. Never make up a revision id. The requests:
    - append: `{"insertText": {"text": "...", "endOfSegmentLocation": {}}}`
    - insert at a point: `{"insertText": {"text": "...", "location": {"index": N}}}`
    - headings: after inserting, `updateParagraphStyle` on that range with
