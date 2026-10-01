@@ -85,9 +85,10 @@ any third-party marketplace):
 
 ## Logos
 
-Connection plugins ship the service's official mark, unmodified, from the
-owner's brand resources. The plugin `README.md` names the source URL and
-carries a `Trademark` notice (the word is checked, capital T included).
+Connection plugins ship the service's official mark from the owner's brand
+resources, unmodified apart from a fill colour where the source mark has
+none. The plugin `README.md` names the source URL and carries a `Trademark`
+notice (the word is checked, capital T included).
 
 ## License
 
