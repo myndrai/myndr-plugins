@@ -14,7 +14,9 @@ Search, read, label and draft email through Google's own Gmail MCP server
 
   Both leave sending to you: the server has no send tool.
 
-Tools that change your mailbox (labels, drafts, trash, spam) ask for approval by default in Myndr.
+In Myndr, tools the Gmail server marks read-only (searching and reading mail) run without asking. Every other
+tool asks for approval by default, including every tool that changes your mailbox: drafts, labels, trash and
+spam. You can set any tool to run without asking for a particular agent.
 
 ## Skill provenance
 

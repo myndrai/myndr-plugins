@@ -14,8 +14,9 @@ Issues, pull requests and code on GitHub through GitHub's remote MCP server
   - `github:release-notes` — draft notes from merged pull requests
 - **Automations:** with this plugin installed, Myndr's GitHub automation nodes are available.
 
-Tools that change repositories (comments, issue edits, reviews, merges, file writes) ask for approval by default in
-Myndr.
+In Myndr, tools the GitHub server marks read-only (reading issues, pull requests and code) run without asking.
+Every other tool asks for approval by default, including every tool that changes a repository: comments, issue
+edits, reviews, merges and file writes. You can set any tool to run without asking for a particular agent.
 
 ## Skill provenance
 

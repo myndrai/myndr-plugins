@@ -14,7 +14,9 @@ Read, summarize and write into documents through Google's own Docs MCP server
 
 The Docs server reads and edits existing documents; it cannot create one.
 
-The tool that changes a document (`update_doc`) asks for approval by default in Myndr.
+In Myndr, tools the Docs server marks read-only (`read_doc`) run without asking. Every other tool asks for
+approval by default, including the one that changes a document (`update_doc`). You can set any tool to run
+without asking for a particular agent.
 
 ## Skill provenance
 

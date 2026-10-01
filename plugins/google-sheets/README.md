@@ -12,8 +12,10 @@ Read and update spreadsheets through Google's own Sheets MCP server
   - `google-sheets:analyze-sheet` — learn a spreadsheet's shape and answer questions with exact figures.
   - `google-sheets:update-sheet` — make range-precise edits, showing before and after.
 
-Tools that change a spreadsheet (`update_values`, `update_formulas`, `insert_dimension` and
-`update_spreadsheet`) ask for approval by default in Myndr.
+In Myndr, tools the Sheets server marks read-only (reading values and spreadsheet structure) run without
+asking. Every other tool asks for approval by default, including the ones that change a spreadsheet
+(`update_values`, `update_formulas`, `insert_dimension` and `update_spreadsheet`). You can set any tool to run
+without asking for a particular agent.
 
 ## Skill provenance
 

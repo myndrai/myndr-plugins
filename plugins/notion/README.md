@@ -13,8 +13,9 @@ Search, write and organize your Notion workspace through Notion's hosted MCP ser
   - `notion:research-documentation`
   - `notion:spec-to-implementation`
 
-Tools that change your workspace (creating or updating pages, databases, comments) ask for approval by default
-in Myndr.
+In Myndr, tools the Notion server marks read-only run without asking. Every other tool asks for approval by
+default, including every tool that changes your workspace: creating or updating pages, databases and comments.
+You can set any tool to run without asking for a particular agent.
 
 ## Skill provenance
 

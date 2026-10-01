@@ -11,7 +11,9 @@ Find, read and summarize files through Google's own Drive MCP server
 - **Skill:** `google-drive:find-and-summarize` — find a file by what you remember about it, read it, and
   summarize it with a link.
 
-Tools that write to your Drive (`create_file` and `copy_file`) ask for approval by default in Myndr.
+In Myndr, tools the Drive server marks read-only (searching and reading files) run without asking. Every other
+tool asks for approval by default, including the ones that write to your Drive (`create_file` and
+`copy_file`). You can set any tool to run without asking for a particular agent.
 
 ## Skill provenance
 
