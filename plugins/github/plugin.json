@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "github",
+  "version": "0.1.0",
+  "description": "Issues, pull requests and code on GitHub through GitHub's remote MCP server.",
+  "author": {
+    "name": "GitHub",
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/github",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["github", "issues", "pull-requests", "code-review"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "GitHub",
+        "shortDescription": "Issues, pull requests and code search",
+        "longDescription": "Triage issues, review and open pull requests, and search code across your repositories.",
+        "category": "development",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}

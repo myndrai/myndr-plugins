@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-sheets",
+  "version": "0.1.0",
+  "description": "Read and update Google Sheets spreadsheets through Google's Sheets MCP server.",
+  "author": {
+    "name": "Google",
+    "url": "https://www.google.com"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-sheets",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["sheets", "spreadsheet", "google"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Google Sheets",
+        "shortDescription": "Read and update spreadsheets",
+        "longDescription": "Read ranges, update values and formulas, and add rows or columns in your spreadsheets.",
+        "category": "productivity",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}

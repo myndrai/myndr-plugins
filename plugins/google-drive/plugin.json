@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-drive",
+  "version": "0.1.0",
+  "description": "Find, read and summarize files in Google Drive through Google's Drive MCP server.",
+  "author": {
+    "name": "Google",
+    "url": "https://www.google.com"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-drive",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["drive", "files", "google"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Google Drive",
+        "shortDescription": "Find and read your files",
+        "longDescription": "Search your Drive by title, content, owner or date, read documents, spreadsheets, slides and PDFs, and summarize what they say.",
+        "category": "productivity",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}

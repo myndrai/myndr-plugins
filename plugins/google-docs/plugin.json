@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-docs",
+  "version": "0.1.0",
+  "description": "Read, summarize and write into Google Docs through Google's Docs MCP server.",
+  "author": {
+    "name": "Google",
+    "url": "https://www.google.com"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-docs",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["docs", "documents", "google"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Google Docs",
+        "shortDescription": "Read and write documents",
+        "longDescription": "Read and summarize documents, and write drafts into a doc you choose — directly or as suggestions.",
+        "category": "productivity",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}

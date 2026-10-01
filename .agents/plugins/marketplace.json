@@ -13,7 +13,7 @@
       "rank": 2,
       "interface": {
         "displayName": "Web research",
-        "shortDescription": "Search, read, and cite the live web."
+        "shortDescription": "Search, read and cite the live web"
       },
       "source": {
         "source": "local",
@@ -21,19 +21,115 @@
       }
     },
     {
-      "name": "repo-triage",
-      "description": "Triage GitHub issues and pull requests on a connected repository.",
-      "category": "development",
+      "name": "gmail",
+      "description": "Search, read, label and draft email in Gmail through Google's Gmail MCP server.",
+      "category": "communication",
       "version": "0.1.0",
       "featured": true,
-      "rank": 1,
+      "rank": 30,
       "interface": {
-        "displayName": "Repo triage",
-        "shortDescription": "Sort issues and PRs, then say what to do next."
+        "displayName": "Gmail",
+        "shortDescription": "Read, label and draft email"
       },
       "source": {
         "source": "local",
-        "path": "./plugins/repo-triage"
+        "path": "./plugins/gmail"
+      }
+    },
+    {
+      "name": "google-calendar",
+      "description": "See, plan and schedule events in Google Calendar through Google's Calendar MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 29,
+      "interface": {
+        "displayName": "Google Calendar",
+        "shortDescription": "See your day and schedule meetings"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-calendar"
+      }
+    },
+    {
+      "name": "google-drive",
+      "description": "Find, read and summarize files in Google Drive through Google's Drive MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 28,
+      "interface": {
+        "displayName": "Google Drive",
+        "shortDescription": "Find and read your files"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-drive"
+      }
+    },
+    {
+      "name": "google-sheets",
+      "description": "Read and update Google Sheets spreadsheets through Google's Sheets MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 25,
+      "interface": {
+        "displayName": "Google Sheets",
+        "shortDescription": "Read and update spreadsheets"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-sheets"
+      }
+    },
+    {
+      "name": "google-docs",
+      "description": "Read, summarize and write into Google Docs through Google's Docs MCP server.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 24,
+      "interface": {
+        "displayName": "Google Docs",
+        "shortDescription": "Read and write documents"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-docs"
+      }
+    },
+    {
+      "name": "notion",
+      "description": "Search, write and organize Notion through Notion's hosted MCP server, with Notion's own skills.",
+      "category": "productivity",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 26,
+      "interface": {
+        "displayName": "Notion",
+        "shortDescription": "Search, write and organize Notion"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/notion"
+      }
+    },
+    {
+      "name": "github",
+      "description": "Issues, pull requests and code on GitHub through GitHub's remote MCP server.",
+      "category": "development",
+      "version": "0.1.0",
+      "featured": true,
+      "rank": 27,
+      "interface": {
+        "displayName": "GitHub",
+        "shortDescription": "Issues, pull requests and code search"
+      },
+      "source": {
+        "source": "local",
+        "path": "./plugins/github"
       }
     }
   ]

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-calendar",
+  "version": "0.1.0",
+  "description": "See, plan and schedule events in Google Calendar through Google's Calendar MCP server.",
+  "author": {
+    "name": "Google",
+    "url": "https://www.google.com"
+  },
+  "homepage": "https://github.com/myndrai/myndr-plugins/tree/main/plugins/google-calendar",
+  "repository": "https://github.com/myndrai/myndr-plugins",
+  "license": "MIT",
+  "keywords": ["calendar", "scheduling", "google"],
+  "extensions": {
+    "ai.myndr": {
+      "interface": {
+        "displayName": "Google Calendar",
+        "shortDescription": "See your day and schedule meetings",
+        "longDescription": "Read your calendars, find times that work for everyone, and create or answer invitations when you say so.",
+        "category": "productivity",
+        "icon": "./assets/icon.svg",
+        "icon_dark": "./assets/icon-dark.svg"
+      }
+    }
+  }
+}
