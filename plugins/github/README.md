@@ -12,7 +12,9 @@ Issues, pull requests and code on GitHub through GitHub's remote MCP server
   - `github:triage-issues` — sort the backlog and propose next actions
   - `github:review-pr` — review a pull request, and post only on your word
   - `github:release-notes` — draft notes from merged pull requests
-- **Automations:** with this plugin installed, Myndr's GitHub automation nodes are available.
+- **Automations:** with this plugin installed, Myndr's GitHub automation nodes are available. Uninstalling the
+  plugin lists the automations that use GitHub nodes and deletes them with it if you confirm; Cancel keeps the
+  plugin and the automations.
 
 In Myndr, tools the GitHub server marks read-only (reading issues, pull requests and code) run without asking.
 Every other tool asks for approval by default, including every tool that changes a repository: comments, issue
