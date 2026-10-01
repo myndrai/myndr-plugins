@@ -13,7 +13,7 @@
       "rank": 2,
       "interface": {
         "displayName": "Web research",
-        "shortDescription": "Search, read, and cite the live web."
+        "shortDescription": "Search, read and cite the live web"
       },
       "source": {
         "source": "local",

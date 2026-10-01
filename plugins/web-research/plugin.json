@@ -15,7 +15,7 @@
     "ai.myndr": {
       "interface": {
         "displayName": "Web research",
-        "shortDescription": "Search, read, and cite the live web.",
+        "shortDescription": "Search, read and cite the live web",
         "longDescription": "Two skills: a research loop that searches, reads, and reports with sources, and a source check that rates how much a claim can be trusted.",
         "category": "research"
       }
