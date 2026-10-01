@@ -15,8 +15,7 @@ See, plan and schedule events through Google's own Calendar MCP server
 In Myndr, tools the Calendar server marks read-only (listing calendars and events, suggesting times) run without
 asking. Every other tool asks for approval by default, including every tool that changes your calendars:
 creating, updating, deleting and answering events. Creating or updating an event with attendees can email them
-invitations or updates from your account. You can set any tool to run without asking for a particular
-agent.
+invitations or updates from your account. You can set any tool to run without asking for a particular agent.
 
 ## Skill provenance
 
